@@ -1,0 +1,215 @@
+:root{
+    --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Space Grotesk', sans-serif;   
+}
+html{
+    background-image: url("/images/bg-main-desktop.png" ) ; 
+    background-repeat: no-repeat;
+ 
+ }
+
+body{
+   
+}
+.flex-container{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.formulario-grid{
+  display:grid;
+  justify-content: center;
+  grid-template-columns:  100px 100px 100px 100px;
+  grid-template-rows:  100px 100px 100px 100px ;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+
+.grid-objecto1{
+  grid-column: 1/5;
+  justify-content: center;
+}
+.grid-objecto2{
+    grid-column: 1/5;
+    justify-content: center;
+}
+
+.grid-objecto3{
+ grid-column: 1 /3;
+ justify-content: center;
+}
+.grid-objecto3 .celdas{
+    display:flex;
+    
+}
+.grid-objecto3 input{
+    width: 100px;
+    margin-right: 10px;  
+}
+
+.grid-objecto4{
+ grid-column: 3/5;
+ justify-content: center;
+ 
+
+}
+
+.grid-objecto5{
+ grid-column: 1 / 5;
+ justify-content: center;
+}
+.flex-grid{
+    display: inline-flex;
+    flex-direction: column;
+
+}
+.input-diseño{
+  height: 35px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding:25px ;
+  border: 2px solid gray;
+}
+
+.btn{
+    background-color: var(--Very-dark-violet);
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: hsl(249, 99%, 64%);
+    cursor: pointer;
+}
+.text-diseño{
+    font-size: 20px;
+    margin: 8px;
+    color: var(--Very-dark-violet);
+}
+.caja-card{
+   width: 650px;
+   height: 600px;
+   margin-right: 30px;
+   justify-content: center;
+   
+}
+
+
+.circle{
+    position:absolute;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 30px;
+    left: 30px;    
+    box-shadow: 30px 0px 0px 0px red, 60px 0px 0px 0px yellow;
+}
+.card-back{
+    position: absolute;
+    top: 320px;
+    left: 250px;
+}
+.card-front{
+    position:absolute;
+    top: 40px;
+    left: 90px;
+}
+.card-back h1{
+    position: absolute;
+    left: 350px;
+    top: 95px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    
+}
+.card-front h1{
+   position: absolute;
+  
+   top: 130px;
+   left: 30px;
+   font-size: 35px;
+   color: #fff;
+   font-weight: 400;
+}
+.card-front h2{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.card-front h3{
+    position: absolute;
+    top: 200px;
+    left: 340px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+    
+
+@media (max-width:1260px){
+  
+   .flex-container{
+    min-width: 500px;
+   }
+    .caja-card{
+        position: relative;
+         display: block;
+         width: 500px;
+    } 
+    .card-back{
+        position: absolute;
+        top: 350px;
+        left: 10%;
+    }
+    .card-front{
+        position:absolute;
+        top:80px;
+        left: 10%;
+    }
+    .formulario-grid{
+        justify-content: center;
+    }
+}
+@media (max-width:1110px){
+    html{
+        background-image: url(/images/bg-main-mobile.png) ;
+        background-size: 500% 300px;
+
+    } 
+    .formulario-grid{
+        margin:30px
+    }
+    .card-back{
+      
+        left: 5%;
+    }
+    .card-front{
+       
+        left: 5%;
+    }
+}
