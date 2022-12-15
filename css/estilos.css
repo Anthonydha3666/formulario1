@@ -166,6 +166,15 @@ body{
     font-size: 20px;
     color: #fff;
 }
+.formulario-grid input{
+    transition: outline 2s;
+}
+.formulario-grid input:focus{
+    outline: none;
+    border-color: var(--Very-dark-violet);
+}
+
+
 
 
 
@@ -197,7 +206,7 @@ body{
 }
 @media (max-width:1110px){
     html{
-       background-image: url("../images/bg-main-mobile.png") ;
+        background-image: url("../images/bg-main-mobile.png") ;
         background-size: 500% 300px;
 
     } 
